@@ -10,4 +10,15 @@ fun main(){
     } else {
         println("El mayor es ${value2}")
     }
+
+    println("Rango segun Nivel de la Fuerza")
+    val fuerza: Int = 10
+
+    if (fuerza > 10){
+        println("Maestro")
+    } else if (fuerza > 5){
+        println("Caballero Jedi")
+    } else {
+        println("Padawan")
+    }
 }
