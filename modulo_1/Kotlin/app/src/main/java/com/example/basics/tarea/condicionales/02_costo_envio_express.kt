@@ -13,7 +13,7 @@ fun main() {
     // 3. Calcular el costo total
     val costoTotal = calcularCostoEnvio(distancia, llueveRespuesta)
 
-    println("\n--- RESULTADO DEL ENVÍO ---")
+    println("\nRESULTADO DEL ENVÍO")
     println("Distancia: ${distancia} km")
     println("Lluvia: ${if (llueveRespuesta == "sí") "Sí" else "No"}")
     println("Costo total: ${String.format("%.2f", costoTotal)} €")
