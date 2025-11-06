@@ -5,8 +5,8 @@ import spacing from "../theme/spacing";
 
 type Props = {
   children: ReactNode;
-  scroll?: boolean;            // Usa scroll cuando el contenido sea largo
-  contentStyle?: ViewStyle;    // Permite estilos adicionales por screen
+  scroll?: boolean;
+  contentStyle?: ViewStyle;
 };
 
 export default function MainLayout({ children, scroll = false, contentStyle }: Props) {

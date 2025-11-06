@@ -1,19 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import SaludoProps from './src/components/SaludoProps';
-import Saludo from './src/components/Saludo';
+import Saludo from "./src/components/Saludo";
+import SaludoProps from "./src/components/SaludoProps";
 import Contador from './src/components/Contador';
 import Caja from './src/components/Caja';
+import Perfil from './src/components/Perfil';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Saludo />
       <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <SaludoProps nombre='Christian' />
-      <Contador />
-      <Caja />
+      <SaludoProps nombre="Francisco" />
+      <Contador/>
+      <Caja/>
+      <Perfil/>
     </View>
   );
 }

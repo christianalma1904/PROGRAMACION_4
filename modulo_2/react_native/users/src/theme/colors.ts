@@ -8,4 +8,3 @@ const colors = {
     success: "#3fb950",
   };
   export default colors;
-  
