@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hellojecktpackcompose">
         <activity
-            android:name=".MainNavigation"
+            android:name=".LoteNavigationActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Hellojecktpackcompose">
