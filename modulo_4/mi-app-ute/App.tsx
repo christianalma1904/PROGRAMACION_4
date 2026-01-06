@@ -2,49 +2,13 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import TypeScriptDemo from "./src/screens/TypeScriptDemo";
 import { AppButton } from "./src/components/AppButton";
+import { Parte10Lab } from "./src/screens/Parte10Lab";
 
 export default function App() {
   return (
     <>
-    <View style={styles.container}>
-      <Text style={styles.title}>React Native + TypeScript</Text>
-      <Text>Entorno listo ✅</Text>
-      <TypeScriptDemo>
-      </TypeScriptDemo>
+      <Parte10Lab />
       <StatusBar style="light" />
-    </View>
-    <View style={styles.container}>
-      <Text style={styles.title}>Bienvenido al 4to Semestre</Text>
-      <Text>Entorno listo ✅</Text>
-      <StatusBar style="light" />
-    </View>
-    <View style={styles.section}>
-    <Text style={styles.sectionTitle}>4. Componente con Props Tipadas</Text>
-    
-    <AppButton
-      title="Presionar aquí"
-      onPress={() => console.log('Botón presionado!')}
-      variant="primary"
-    />
-    
-    <View style={{ height: 10 }} />
-    
-    <AppButton
-      title="Cargando..."
-      onPress={() => {}}
-      loading={true}
-      variant="secondary"
-    />
-    
-    <View style={{ height: 10 }} />
-    
-    <AppButton
-      title="Deshabilitado"
-      onPress={() => {}}
-      disabled={true}
-      variant="outline"
-    />
-  </View>
     </>
   );
 }
