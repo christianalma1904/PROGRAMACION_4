@@ -1,69 +1,49 @@
-import { StatusBar } from "expo-status-bar";
+// App.tsx principal - Punto de entrada
+import React from 'react';
+import { SafeAreaView, StatusBar } from 'react-native';
+import TypeScriptDemo from './src/screens/TypeScriptDemo';
 import { StyleSheet, Text, View } from "react-native";
-import TypeScriptDemo from "./src/screens/TypeScriptDemo";
-import { AppButton } from "./src/components/AppButton";
-import { Parte10Lab } from "./src/screens/Parte10Lab";
+import { AppTitle } from "@/components/common/AppTitle";
+import AppButton from '@/components/AppButton';
+import { ClockDemo } from '@/screens/ClockDemo';
+import { UseEffectAsyncDemo } from '@/screens/UseEffectAsyncDemo';
+import { AbortFetchDemo } from '@/screens/AbortFetchDemo';
+import { ProductsDemo } from '@/screens/Productos';
+import { Parte09Lab } from '@/screens/Parte09Lab';
+import { Parte11Lab } from '@/screens/Parte11Lab';
+import { Parte12Lab } from '@/screens/Parte12Lab';
 
-export default function App() {
+function App(): React.JSX.Element {
   return (
     <>
-      <Parte10Lab />
-      <StatusBar style="light" />
+      <Parte12Lab />
+      <StatusBar/>
     </>
   );
 }
-  const styles = StyleSheet.create({
+
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0d1117',
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#58a6ff',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  section: {
-    marginBottom: 30,
-  },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#c9d1d9',
-    marginBottom: 10,
-    borderLeftWidth: 3,
-    borderLeftColor: '#58a6ff',
-    paddingLeft: 10,
-  },
-  card: {
-    backgroundColor: '#161b22',
-    borderWidth: 1,
-    borderColor: '#30363d',
-    borderRadius: 8,
+    backgroundColor: "#0d1117",
     padding: 16,
   },
-  label: {
-    color: '#8b949e',
-    fontSize: 14,
-    marginTop: 8,
+  h1: {
+    color: "#58a6ff",
+    fontWeight: "900",
+    fontSize: 18,
+    marginBottom: 12,
   },
-  value: {
-    color: '#c9d1d9',
-    fontSize: 16,
-    fontWeight: '500',
+  stage: {
+    flex: 1,
+    borderRadius: 12,
+    overflow: "hidden",
+    borderWidth: 1,
+    borderColor: "#30363d",
   },
-  success: {
-    color: '#3fb950',
-  },
-  error: {
-    color: '#f85149',
-  },
-  codeComment: {
-    color: '#8b949e',
-    fontStyle: 'italic',
-    fontSize: 12,
-    marginTop: 8,
+  help: {
+    marginTop: 12,
+    color: "#8b949e",
+    lineHeight: 18,
   },
 });

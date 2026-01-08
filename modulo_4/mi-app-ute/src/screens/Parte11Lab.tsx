@@ -1,16 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
-import { RefCounter } from "./RefCounter";
-import { FocusDemo } from "./FocusDemo";
-import { TimerRefDemo } from "./TimerRefDemo";
+import { TodosScreen } from "./TodosScreen";
 
-export function Parte10Lab() {
+export function Parte11Lab() {
   return (
     <View style={styles.container}>
-      <Text style={styles.h1}>Parte 10 Lab — useRef / forwardRef</Text>
+      <Text style={styles.h1}>Parte 11 Lab — Custom Hooks</Text>
 
-      {/* Cambia aquí qué ejemplo estás probando */}
       <View style={styles.stage}>
-        <TimerRefDemo />
+        <TodosScreen />
       </View>
     </View>
   );

@@ -1,4 +1,3 @@
-// src/screens/TypeScriptDemo.tsx
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
@@ -13,7 +12,6 @@ export function TypeScriptDemo() {
     "ana": 88 
   };
 
-  // Union type para estado
   type Status = "IDLE" | "LOADING" | "SUCCESS" | "ERROR";
   const currentStatus: Status = "SUCCESS";
 
@@ -41,7 +39,7 @@ export function TypeScriptDemo() {
           <Text style={[
             styles.value,
             currentStatus === "SUCCESS" && styles.success
-            //currentStatus === "ERROR" && styles.error
+            // currentStatus === "ERROR" && styles.error
           ]}>
             {currentStatus}
           </Text>

@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-//import { ProductsMemoDemo } from "./ProductsMemoDemo";
+import { ProductsMemoDemo } from "./ProductsMemoDemo";
 import { CallbackDemo } from "./CallbackDemo";
 
 export function Parte09Lab() {
@@ -7,7 +7,6 @@ export function Parte09Lab() {
     <View style={styles.container}>
       <Text style={styles.h1}>Parte 9 Lab — useMemo / useCallback</Text>
 
-      {/* Cambia aquí qué ejemplo estás probando */}
       <View style={styles.stage}>
         <CallbackDemo />
       </View>

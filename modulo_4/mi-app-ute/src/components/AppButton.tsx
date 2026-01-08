@@ -9,7 +9,6 @@ import {
   ActivityIndicator
 } from 'react-native';
 
-// 1. Definimos las props con TYPE (porque no necesitamos extender)
 type AppButtonProps = {
   title: string;
   onPress: () => void;
@@ -21,7 +20,6 @@ type AppButtonProps = {
   testID?: string;
 };
 
-// 2. Componente con props fuertemente tipadas
 export function AppButton({
   title,
   onPress,
@@ -111,35 +109,4 @@ const styles = StyleSheet.create({
 
 export default AppButton;
 
-// ===== EJEMPLO DE USO EN TypeScriptDemo.tsx =====
-// Agrega esto en el return de TypeScriptDemo:
 
-/*
-<View style={styles.section}>
-  <Text style={styles.sectionTitle}>4. Componente con Props Tipadas</Text>
-  
-  <AppButton
-    title="Presionar aquí"
-    onPress={() => console.log('Botón presionado!')}
-    variant="primary"
-  />
-  
-  <View style={{ height: 10 }} />
-  
-  <AppButton
-    title="Cargando..."
-    onPress={() => {}}
-    loading={true}
-    variant="secondary"
-  />
-  
-  <View style={{ height: 10 }} />
-  
-  <AppButton
-    title="Deshabilitado"
-    onPress={() => {}}
-    disabled={true}
-    variant="outline"
-  />
-</View>
-*/

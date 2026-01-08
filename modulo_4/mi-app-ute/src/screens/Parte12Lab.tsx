@@ -1,17 +1,18 @@
 import { StyleSheet, Text, View } from "react-native";
-import { RefCounter } from "./RefCounter";
-import { FocusDemo } from "./FocusDemo";
-import { TimerRefDemo } from "./TimerRefDemo";
+import { RowDemo } from "../demos/parte12/RowDemo";
 
-export function Parte10Lab() {
+export function Parte12Lab() {
   return (
     <View style={styles.container}>
-      <Text style={styles.h1}>Parte 10 Lab — useRef / forwardRef</Text>
+      <Text style={styles.h1}>Parte 12 Lab — Flexbox</Text>
 
-      {/* Cambia aquí qué ejemplo estás probando */}
       <View style={styles.stage}>
-        <TimerRefDemo />
+        <RowDemo />
       </View>
+
+      <Text style={styles.help}>
+        Cambia el import y el componente renderizado para probar: RowDemo, FlexRatioDemo, WrapDemo, etc.
+      </Text>
     </View>
   );
 }
@@ -34,5 +35,10 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     borderWidth: 1,
     borderColor: "#30363d",
+  },
+  help: {
+    marginTop: 12,
+    color: "#8b949e",
+    lineHeight: 18,
   },
 });

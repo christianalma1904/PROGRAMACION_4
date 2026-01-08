@@ -15,11 +15,15 @@ const Item = memo(function Item({ value, onPress }: ItemProps) {
 });
 
 export function CallbackDemo() {
-  const [count, setCount] = useState<number>(0);
-
-  const handlePress = useCallback((v: number) => {
-    setCount((prev) => prev + v);
-  }, []);
+    const [count, setCount] = useState<number>(0);
+  
+    const handlePress = useCallback((v: number) => {
+      setCount((prev) => prev + v);
+    }, []);
+  
+    const handlePress_2 = useCallback((v: number) => {
+      setCount((prev) => prev * v);
+    }, []);
 
   return (
     <View style={styles.container}>
@@ -27,7 +31,7 @@ export function CallbackDemo() {
       <Item value={1} onPress={handlePress} />
       <Item value={2} onPress={handlePress} />
       <Item value={3} onPress={handlePress} />
-      <Item value={4} onPress={handlePress} />
+      <Item value={4} onPress={handlePress_2} />
     </View>
   );
 }
