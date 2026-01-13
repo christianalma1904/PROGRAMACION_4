@@ -11,12 +11,10 @@ export function HomeScreen({ navigation }: Props) {
       <Text style={styles.body}>Navegación con Stack + TypeScript</Text>
 
       <Pressable
-        style={styles.btn}
-        onPress={() =>
-          navigation.navigate("Details", { id: "p1", title: "Producto 1" })
-        }
+        style={[styles.btn, { marginTop: 10 }]}
+        onPress={() => navigation.navigate("DisplayName")}
       >
-        <Text style={styles.btnText}>Ir a Details (con params)</Text>
+        <Text style={styles.btnText}>Abrir Settings (Storage)</Text>
       </Pressable>
     </View>
   );
